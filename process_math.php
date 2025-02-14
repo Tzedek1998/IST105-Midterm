@@ -3,6 +3,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $input1 = escapeshellarg($_POST['input1']);
     $input2 = escapeshellarg($_POST['input2']);
     $operation = escapeshellarg($_POST['operation']);
+
+    // Debugging: Print the inputs
+    echo "Input1: $input1<br>";
+    echo "Input2: $input2<br>";
+    echo "Operation: $operation<br>";
+
     $command = "python3 /var/www/html/math_operations.py $input1 $input2 $operation 2>&1";
     $result = shell_exec($command);
 
