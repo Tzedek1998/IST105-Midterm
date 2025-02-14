@@ -1,5 +1,4 @@
 <?php
-// process_math.php
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $input1 = escapeshellarg($_POST['input1']);
     $input2 = escapeshellarg($_POST['input2']);
