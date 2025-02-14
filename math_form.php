@@ -7,7 +7,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>🔢  Mathematical Calculator</h1>
+        <h1>  Mathematical Calculator</h1>
         <form method="POST" action="process_math.php">
             <div class="form-group">
                 <label>Number 1:</label>
